@@ -10,3 +10,20 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
+    gateway:
+      routes:
+      - id: food_service_route
+        uri: lb://food-service
+        predicates:
+          - Path=/foods/*
+
+      - id: diary_service_route
+        uri: lb://diary-service
+        predicates:
+          - Path=/diaries/*
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
