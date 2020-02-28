@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: gateway-service
+  profiles:
+    active:
+      default
+
+server:
+  port: 8082
