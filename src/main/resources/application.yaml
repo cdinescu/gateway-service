@@ -22,6 +22,11 @@ spring:
         predicates:
           - Path=/diaries/*
 
+      - id: ask_oracle_service_route
+        uri: lb://ask-oracle-service
+        predicates:
+          - Path=/top-richest-foods/*
+
 management:
   endpoints:
     web:
