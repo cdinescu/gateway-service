@@ -26,9 +26,15 @@ spring:
         uri: lb://ask-oracle-service
         predicates:
           - Path=/top-richest-foods/*
+  rabbitmq:
+    host: rabbitmq
 
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+
+sleuth:
+  sampler:
+    probability: 1.0
