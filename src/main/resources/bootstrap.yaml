@@ -18,6 +18,9 @@ spring:
             allowedOrigins: "*"
             allowedMethods:
             - GET
+            - POST
+            - PUT
+            - DELETE
 
 server:
   port: 8082
