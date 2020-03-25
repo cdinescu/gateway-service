@@ -16,10 +16,6 @@ spring:
         corsConfigurations:
           '[/**]':
             allowedOrigins: "*"
-            allowedMethods:
-            - GET
-            - POST
-            - PUT
-            - DELETE
+            allowedMethods: "*"
 server:
   port: 8082
