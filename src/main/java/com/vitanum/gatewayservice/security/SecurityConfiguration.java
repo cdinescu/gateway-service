@@ -31,7 +31,7 @@ public class SecurityConfiguration {
     }
 
     @Bean
-    CorsWebFilter corsWebFilter() {
+    public CorsWebFilter corsWebFilter() {
         CorsConfiguration corsConfig = new CorsConfiguration();
         corsConfig.setAllowedOrigins(List.of("*"));
         corsConfig.setMaxAge(3600L);
