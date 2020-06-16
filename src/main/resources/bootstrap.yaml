@@ -11,12 +11,7 @@ spring:
       failFast: true
       retry:
         maxAttempts: 20
-    gateway:
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "*"
-            allowedMethods:
-              - GET
 server:
   port: 8082
+
+
